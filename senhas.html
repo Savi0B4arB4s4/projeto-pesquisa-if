@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de document.onkeypress</title>
+</head>
+<body>
+    <input type="text" id="inputField" placeholder="Digite aqui">
+
+    <script>
+        document.onkeypress = function(event) {
+            // Verifica se a tecla "Enter" (código 13) foi pressionada
+            if (event.keyCode === 13) {
+                const inputValue = document.getElementById('inputField').value;
+                alert('Você digitou: ' + inputValue);
+            }
+        };
+    </script>
+</body>
+</html>
